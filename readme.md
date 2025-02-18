@@ -3,9 +3,9 @@ A benchmark for Landsat to Sentinel imageries via deep learning based super-reso
 ## Dataset Details
 Image pairs of this dataset queried inside Google Earth Engine using the following criteria's: Cloudless images, the year 2023 images, acquisition time less than 1 hour between image pairs, and common area of pairs must be at least 100 km x 100 km. 30 pairs manually selected from these pairs using [Land2Sent GEE application](https://ee-aksoysamett.projects.earthengine.app/view/land2sent). Sentinel images are tiled 480 x 480 pixels and Landsat images are tiled 160 x 160 pixels for super resolution model training. Total of 15066 tiles produced. The dataset splitted %70 training, %20 validation, and %10 testing.
 
-![platform](https://github.com/RSandAI/Land2Sent/blob/main/images/platfrom.jpg)
+![platform](https://github.com/RSandAI/Land2Sent/blob/main/images/platform.jpg)
 
-![tile_examples](https://github.com/RSandAI/Land2Sent/blob/main/images/tile_examples.jpg)
+![tile_examples](https://github.com/RSandAI/Land2Sent/blob/main/images/tile_examples.png)
 
 ## Benchmark Results
 ### Metrics
