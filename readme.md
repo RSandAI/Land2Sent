@@ -114,4 +114,4 @@ RMSE values of NDVI
 
 ## Citation
 
-Will be availabe.
+Wang, P., Aksoy, S., & Sertel, E. (2026). A Benchmark Dataset for Landsat-to-Sentinel Image Generation Using Deep Learning-Driven Super-Resolution Techniques. Advances in Space Research. https://doi.org/10.1016/j.asr.2026.01.049
