@@ -1,12 +1,14 @@
-# # Land2Sent
+# Land2Sent
 A benchmark for Landsat to Sentinel imageries via deep learning based super-resolution methods.
 ## Dataset Details
 Image pairs of this dataset queried inside Google Earth Engine using the following criteria's: Cloudless images, the year 2023 images, acquisition time less than 1 hour between image pairs, and common area of pairs must be at least 100 km x 100 km. 30 pairs manually selected from these pairs using [Land2Sent GEE application](https://ee-aksoysamett.projects.earthengine.app/view/land2sent). Sentinel images are tiled 480 x 480 pixels and Landsat images are tiled 160 x 160 pixels for super resolution model training. Total of 15066 tiles produced. The dataset splitted %70 training, %20 validation, and %10 testing.
 
-![platform](https://github.com/RSandAI/Land2Sent/blob/main/images/platform.jpg)
+![platform](https://github.com/RSandAI/Land2Sent/blob/main/images/platform.png)
 
 ![tile_examples](https://github.com/RSandAI/Land2Sent/blob/main/images/tile_examples.png)
 
+## Download The Dataset
+[Please click here to download the dataset.](https://drive.google.com/drive/folders/1w0baaWzlS1PGPXXuETS5mU0h3S8QBQiL?usp=sharing)
 ## Benchmark Results
 ### Metrics
 Metric values on normalized 4-band images:
@@ -64,54 +66,22 @@ RMSE values of NDVI
 |16-bit|3|0.321|0.119|0.127|0.145|0.129|0.131|0.121|0.125|0.130|0.114|0.111|
 |16-bit|4|0.381|0.054|0.061|0.052|0.066|0.043|0.046|0.048|0.043|0.044|0.061|
 |16-bit|5|0.181|0.062|0.069|0.064|0.067|0.062|0.062|0.061|0.066|0.059|0.065|
-
-### Visual Results
-#### True Color Normalized
-
-![TCN1](https://github.com/RSandAI/Land2Sent/blob/main/images/TCN1.png)
-
-![TCN2](https://github.com/RSandAI/Land2Sent/blob/main/images/TCN2.png)
-
-![TCN3](https://github.com/RSandAI/Land2Sent/blob/main/images/TCN3.png)
-
-![TCN4](https://github.com/RSandAI/Land2Sent/blob/main/images/TCN4.png)
-
-![TCN5](https://github.com/RSandAI/Land2Sent/blob/main/images/TCN5.png)
-
-#### True Color 16-bit
-
-![TC1](https://github.com/RSandAI/Land2Sent/blob/main/images/TC1.png)
-
-![TC2](https://github.com/RSandAI/Land2Sent/blob/main/images/TC2.png)
-
-![TC3](https://github.com/RSandAI/Land2Sent/blob/main/images/TC3.png)
-
-![TC4](https://github.com/RSandAI/Land2Sent/blob/main/images/TC4.png)
-
-![TC5](https://github.com/RSandAI/Land2Sent/blob/main/images/TC5.png)
-
-#### False Color Normalized
-![FCN1](https://github.com/RSandAI/Land2Sent/blob/main/images/FCN1.png)
-
-![FCN2](https://github.com/RSandAI/Land2Sent/blob/main/images/FCN2.png)
-
-![FCN3](https://github.com/RSandAI/Land2Sent/blob/main/images/FCN3.png)
-
-![FCN4](https://github.com/RSandAI/Land2Sent/blob/main/images/FCN4.png)
-
-![FCN5](https://github.com/RSandAI/Land2Sent/blob/main/images/FCN5.png)
-#### False Color 16-bit
-
-![FC1](https://github.com/RSandAI/Land2Sent/blob/main/images/FC1.png)
-
-![FC2](https://github.com/RSandAI/Land2Sent/blob/main/images/FC2.png)
-
-![FC3](https://github.com/RSandAI/Land2Sent/blob/main/images/FC3.png)
-
-![FC4](https://github.com/RSandAI/Land2Sent/blob/main/images/FC4.png)
-
-![FC5](https://github.com/RSandAI/Land2Sent/blob/main/images/FC5.png)
-
+## Download The Model Weight
+[Please click here to download the model weights.](https://drive.google.com/drive/folders/1M-NS0zYsOzme4s26N1IpUCIJd-IDYhJW?usp=sharing)
 ## Citation
+Please kindly cite our [paper](https://doi.org/10.1016/j.asr.2026.01.049) if the dataset and models used in the study are useful for your research.
 
 Wang, P., Aksoy, S., & Sertel, E. (2026). A Benchmark Dataset for Landsat-to-Sentinel Image Generation Using Deep Learning-Driven Super-Resolution Techniques. Advances in Space Research. https://doi.org/10.1016/j.asr.2026.01.049
+
+```bibtex
+@article{WANG2026,
+title = {A Benchmark Dataset for Landsat-to-Sentinel Image Generation Using Deep Learning-Driven Super-Resolution Techniques},
+journal = {Advances in Space Research},
+year = {2026},
+issn = {0273-1177},
+doi = {https://doi.org/10.1016/j.asr.2026.01.049},
+url = {https://www.sciencedirect.com/science/article/pii/S0273117726000748},
+author = {Peijuan Wang and Samet Aksoy and Elif Sertel},
+keywords = {Landsat 8/9, Sentinel-2A/B, Deep learning, Super-resolution},
+}
+```
